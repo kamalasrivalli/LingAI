@@ -18,14 +18,13 @@ The application combines Mistral, LangGraph, RAG, tool calling, prompt engineeri
 - Streamlit chat interface
 - Local Mistral inference through Ollama
 - Retrieval-augmented generation for German grammar
-
+- 
 ## Architecture
 
 ```mermaid
 flowchart TD
     A[User] --> B[Streamlit UI]
     B --> C[LangGraph Agent]
-
     C --> D{Tool Selection}
 
     D --> E[Dictionary Tool]
@@ -42,19 +41,19 @@ flowchart TD
     J --> C
     C --> K[Mistral]
     K --> B
+```
 
-Agent Workflow
+### Agent Workflow
 
 The user submits a question through the Streamlit interface.
 
-The LangGraph agent analyzes the user's intent and selects the appropriate capability:
+The LangGraph agent analyzes the user's intent and selects the appropriate capability.
 
-Vocabulary questions → Dictionary Tool
-Grammar questions → German Grammar RAG
-Practice requests → Exercise Generator
+- Vocabulary questions → Dictionary Tool
+- Grammar questions → German Grammar RAG
+- Practice requests → Exercise Generator
 
 The selected tool is executed and its result is returned to the agent. Mistral then uses the tool result to generate the final response.
-
 The general workflow is:
 User Question
       ↓
