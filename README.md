@@ -18,7 +18,7 @@ The application combines Mistral, LangGraph, RAG, tool calling, prompt engineeri
 - Streamlit chat interface
 - Local Mistral inference through Ollama
 - Retrieval-augmented generation for German grammar
-- 
+  
 ## Architecture
 
 ```mermaid
@@ -82,8 +82,10 @@ Streamlit
 Vector search
 Custom Python tools
 Prompt engineering
+
 Project Structure
 
+```text
 LinguAI/
 │
 ├── docs/
@@ -111,6 +113,7 @@ LinguAI/
 ├── german_grammar.pdf
 ├── requirements.txt
 └── README.md
+```
 
 Core Components
 app.py
