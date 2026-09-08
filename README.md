@@ -55,6 +55,7 @@ The LangGraph agent analyzes the user's intent and selects the appropriate capab
 
 The selected tool is executed and its result is returned to the agent. Mistral then uses the tool result to generate the final response.
 The general workflow is:
+```
 User Question
       ↓
 Streamlit
@@ -70,8 +71,10 @@ Tool Result
 Mistral
       ↓
 Final Answer
+```
 
-Tech Stack
+Tech Stack:
+
 Python
 Mistral
 Ollama
